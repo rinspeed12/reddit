@@ -1,2 +1,6 @@
-[Service]
-EnvironmentFile=/home/coder/project/reddit
+EnvironmentFile: /home/coder/project/reddit
+reddit_path: /opt/reddit
+POST_SERVICE_HOST: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
+COMMENT_SERVICE_HOST: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
+POST_SERVICE_PORT: ""
+COMMENT_SERVICE_PORT: ""
