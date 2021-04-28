@@ -4,3 +4,5 @@ POST_SERVICE_HOST: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['add
 COMMENT_SERVICE_HOST: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
 POST_SERVICE_PORT: ""
 COMMENT_SERVICE_PORT: ""
+COMMENT_DATABASE_HOST: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
+COMMENT_DATABASE_PORT: "27017"

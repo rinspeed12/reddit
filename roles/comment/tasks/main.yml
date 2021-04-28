@@ -1,0 +1,32 @@
+---
+# tasks file for comment
+
+- name: install bundler
+  apt:
+    name: bundler
+    state: present
+    update_cache: true
+
+- name: install comment dependencies
+  bundler:
+    state: present
+    gemfile: /opt/reddit/comment/Gemfile
+
+- name: add comment_config
+  template:
+    src: comment_config.j2
+    dest: /opt/reddit/comment/comment_config
+  notify: reload reddit-comment
+
+- name: add reddit-comment.service
+  template:
+    src: reddit-comment.service.j2
+    dest: /etc/systemd/system/reddit-comment.service
+  notify: reload reddit-comment
+
+- name: enable and start reddit-comment
+  systemd:
+    state: started
+    name: reddit-comment
+    enabled: true
+    daemon_reload: true

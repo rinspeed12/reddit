@@ -3,6 +3,7 @@
   become: true
   roles:
   - ui
+  - comment
   pre_tasks:
     - name: clone repo
       git:
