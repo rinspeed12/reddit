@@ -4,6 +4,7 @@
   roles:
   - ui
   - comment
+  - post
   pre_tasks:
     - name: clone repo
       git:
