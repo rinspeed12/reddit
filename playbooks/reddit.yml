@@ -5,6 +5,7 @@
   - ui
   - comment
   - post
+  - db
   pre_tasks:
     - name: clone repo
       git:

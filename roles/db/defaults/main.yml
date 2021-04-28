@@ -1,0 +1,5 @@
+---
+# defaults file for db
+env: "dev"
+mongodb_bind_ip: "{{ single_ip }}"
+mongodb_port: "{{ db_port }}"

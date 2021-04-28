@@ -1,2 +1,6 @@
 ---
 # defaults file for ui
+POST_SERVICE_HOST: "{{ single_ip }}"
+POST_SERVICE_PORT: "{{ post_port }}"
+COMMENT_SERVICE_HOST: "{{ single_ip }}"
+COMMENT_SERVICE_PORT: "{{ comment_port }}"

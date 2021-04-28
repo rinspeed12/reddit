@@ -1,10 +1,10 @@
 [all]
-user05 ansible_ssh_host=35.195.221.215 ansible_user=ubuntu
+user05 ansible_ssh_host=104.199.34.93 ansible_user=ubuntu
 [ui]
-user05 ansible_ssh_host=35.195.221.215 ansible_user=ubuntu
+user05 ansible_ssh_host=104.199.34.93 ansible_user=ubuntu
 [db]
-user05 ansible_ssh_host=35.195.221.215 ansible_user=ubuntu
+user05 ansible_ssh_host=104.199.34.93 ansible_user=ubuntu
 [post]
-user05 ansible_ssh_host=35.195.221.215 ansible_user=ubuntu
+user05 ansible_ssh_host=104.199.34.93 ansible_user=ubuntu
 [comment]
-user05 ansible_ssh_host=35.195.221.215 ansible_user=ubuntu
+user05 ansible_ssh_host=104.199.34.93 ansible_user=ubuntu

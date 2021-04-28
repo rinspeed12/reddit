@@ -1,2 +1,4 @@
 ---
 # defaults file for post
+POST_DATABASE_HOST: "{{ single_ip }}"
+POST_DATABASE_PORT: "{{ db_port }}"

@@ -1,2 +1,4 @@
 ---
 # defaults file for comment
+COMMENT_DATABASE_HOST: "{{ single_ip }}"
+COMMENT_DATABASE_PORT: "{{ db_port }}"
